@@ -1,0 +1,35 @@
+Occupational
+14
+Daley	Richie	3	5678.54	a	Atomic Waste	
+Blago	Donald	14	2367.00	a	Public Relations	
+Smith	John	15	32400.40	a	Public Relations	
+Bush	Jorge	6	11004.45	a	Atomic Waste
+Gore	Alvin	37	119003.45 r Public Relations
+Ryan	Ryan	4	111000.00	a Human Resources
+Hanrath	Jon	6	63452.22	a	Public Relations
+Jones	Amanda	13	9222.34		a	Staff Concerns
+Nader	Raul	23	21290.67	r	Human Resources
+Alexander	Sheila	12	25111.89	a	Atomic Waste
+Thompson	Bess	34	133292.89	r	Public Relations
+Schwarzenegger	Cindy	27	133292.90	r	Human Resources
+Allen	Ethan	30	30343.44	a	Staff Concerns
+Stewart	Martha	17	172348.00	r	Public Relations
+Management
+9
+Wang	Zhou	20	132999.90	a	Human Resources
+Martinez	Henry	25	121945.45	a	Oversight Management
+Archimedes	Helen	27	223888.34	a	Executive Vice President
+Ditka	Michael	33	2300.55	a	President
+Duany	Duany	22	133755.00	a	Manufacturing
+Harris	Devin	20	99867.67	a	Marketing
+Spartacus	Joe	34	86775.55	a	Infrastruture
+Antonio	Antoinette	16	87656.00	a	Sales
+Methusala	Margaret	55	2300.00	r	Executive Emeritus
+Temporary
+3
+Lezcano	Sixto	1	12000.00	a	Manufacturing
+Johnson	Elizabeth	1	12000.00	a	Manufacturing
+Browning	Elizabeth	1	12000.00	a	Manufacturing
+END_OF_FILE
+
+	

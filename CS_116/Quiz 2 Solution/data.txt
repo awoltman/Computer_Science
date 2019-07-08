@@ -1,0 +1,12 @@
+consumer product,fair,150,Illinois,3
+consumer product,windy,100,Florida,4
+industrial product,50,Maryland,32
+industrial product,50,Illinois,60
+industrial product,20,California,52
+consumer product,dry,30,California,2
+industrial product,30,Illinois,60
+consumer product,rainy,40,California,5
+industrial product,100,Florida,2
+consumer product,gloomy,60,Maryland,4
+industrial product,200,Maryland,20
+industrial product,100,California,2
