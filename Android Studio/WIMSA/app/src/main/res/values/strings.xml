@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">WIMSA</string>
+    <string name="wimsa">Service Assist</string>
+    <string name="login">LOGIN</string>
+    <string name="new_User">NEW USER</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="forgotPassword">FORGOT USERNAME OR PASSWORD</string>
+</resources>
