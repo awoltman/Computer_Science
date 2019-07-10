@@ -25,5 +25,22 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(startIntent);
                 }
             });
+
+            newUser.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent startIntent = new Intent(getApplicationContext(), newUser.class);
+
+                    startActivity(startIntent);
+                }
+            });
+            forgotPassword.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent startIntent = new Intent(getApplicationContext(), forgotPass.class);
+
+                    startActivity(startIntent);
+                }
+            });
         }
     }
