@@ -3,7 +3,7 @@ public class Fibonacci
 	public static void main (String[] args)
 	{
 		long counter = 0;
-		while (counter <= 10)
+		while (counter <= 50)
 		{
 			System.out.println("The Fibonacci of " + counter + " is: " +  fibonacci(counter));
 			counter++;
