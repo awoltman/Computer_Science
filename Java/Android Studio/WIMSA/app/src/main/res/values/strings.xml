@@ -12,5 +12,6 @@
     <string name="register">REGISTER</string>
     <string name="enter_email">Enter Email:</string>
     <string name="enter_note">Enter email to reset password</string>
+    <string name="submit">Submit</string>
 
 </resources>
