@@ -16,7 +16,9 @@ public class forgotPass extends AppCompatActivity implements View.OnClickListene
         setContentView(R.layout.forgotpass);
 
         Button subButton = (Button) findViewById(R.id.subMitBtn);
+        Button backButton = (Button) findViewById(R.id.backBtn);
         subButton.setOnClickListener(this);
+        backButton.setOnClickListener(this);
 
 
     }
@@ -27,7 +29,11 @@ public class forgotPass extends AppCompatActivity implements View.OnClickListene
                 Intent loginIntent = new Intent(getApplicationContext(), logIn.class);
                 startActivity(loginIntent);
                 break;
+            case R.id.backBtn:
+                Intent backIntent = new Intent(getApplicationContext(), logIn.class);
+                startActivity(backIntent);
+                break;
         }
 
-    };
+    }
 }

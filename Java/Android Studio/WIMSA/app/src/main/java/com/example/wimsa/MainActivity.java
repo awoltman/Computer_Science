@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 public void onClick(View view) {
                     switch (view.getId()){
                         case R.id.logInBtn:
+
                             Intent loginIntent = new Intent(getApplicationContext(), logIn.class);
                             startActivity(loginIntent);
                             break;
