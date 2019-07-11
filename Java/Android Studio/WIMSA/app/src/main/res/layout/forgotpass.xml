@@ -74,6 +74,6 @@
         app:layout_constraintHorizontal_bias="0.136"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailNoteTextView"
-        tools:text="Login" />
+        tools:text="Submit" />
 
 </android.support.constraint.ConstraintLayout>
