@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     EditText emailET,passwordET;
     String email,password;
+    UserData userData;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         passwordET = (EditText) findViewById(R.id.passwordEditText);
         email = emailET.getText().toString();
         password = emailET.getText().toString();
+        userData = new UserData(this);
 
         Button forgotPassword = (Button) findViewById(R.id.forgotPassBtn);
         Button logIn = (Button) findViewById(R.id.logInBtn);
@@ -35,6 +37,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 public void onClick(View view) {
                     switch (view.getId()){
                         case R.id.logInBtn:
+                            User user = new User(null,null);
+
+                            userData.storedUserData(user);
+                            userData.setUserLoggedIn(true);
 
                             Intent loginIntent = new Intent(getApplicationContext(), logIn.class);
                             startActivity(loginIntent);

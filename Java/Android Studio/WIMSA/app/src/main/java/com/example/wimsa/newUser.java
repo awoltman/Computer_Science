@@ -22,6 +22,7 @@ public class newUser extends AppCompatActivity implements View.OnClickListener {
         register.setOnClickListener(this);
 
     }
+
     @Override
     public void onClick(View view) {
         switch (view.getId()){
