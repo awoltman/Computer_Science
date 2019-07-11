@@ -29,5 +29,5 @@ public class forgotPass extends AppCompatActivity implements View.OnClickListene
                 break;
         }
 
-    };
+    }
 }
