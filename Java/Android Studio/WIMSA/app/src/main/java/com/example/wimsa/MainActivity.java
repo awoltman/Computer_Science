@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 public void onClick(View view) {
                     switch (view.getId()){
                         case R.id.logInBtn:
-                            User user = new User(null,null);
+                            User user = new User(password,email);
 
                             userData.storedUserData(user);
                             userData.setUserLoggedIn(true);
@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             startActivity(forgotIntent);
                             break;
                         case R.id.newUserBtn:
+
                             Intent newIntent = new Intent(getApplicationContext(), newUser.class);
                             startActivity(newIntent);
                             break;
