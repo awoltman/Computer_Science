@@ -30,7 +30,7 @@ public class forgotPass extends AppCompatActivity implements View.OnClickListene
                 startActivity(loginIntent);
                 break;
             case R.id.backBtn:
-                Intent backIntent = new Intent(getApplicationContext(), logIn.class);
+                Intent backIntent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(backIntent);
                 break;
         }
