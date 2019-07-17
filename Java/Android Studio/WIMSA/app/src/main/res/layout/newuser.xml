@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/welbilt_logo" />
 
     <EditText
-        android:id="@+id/fnEditText"
+        android:id="@+id/snEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -34,7 +34,7 @@
         app:layout_constraintVertical_bias="0.314" />
 
     <EditText
-        android:id="@+id/lnEditText"
+        android:id="@+id/mnEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -43,10 +43,10 @@
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fnEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/snEditText" />
 
     <EditText
-        android:id="@+id/emailEditText"
+        android:id="@+id/tagEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -55,10 +55,10 @@
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lnEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/mnEditText" />
 
     <EditText
-        android:id="@+id/passwordTex"
+        android:id="@+id/locEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -69,7 +69,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailEditText"
+        app:layout_constraintTop_toBottomOf="@+id/tagEditText"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
@@ -84,7 +84,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordTex"
+        app:layout_constraintTop_toBottomOf="@+id/locEditText"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
