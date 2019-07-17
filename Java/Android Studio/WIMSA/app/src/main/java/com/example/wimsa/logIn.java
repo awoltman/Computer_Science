@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 
 public class logIn extends AppCompatActivity implements View.OnClickListener {
 
@@ -21,12 +20,27 @@ public class logIn extends AppCompatActivity implements View.OnClickListener {
         userData = new UserData(this);
 
     }
+    @Override
+    protected void onStart(){
+        super.onStart();
+        if(authenticate() == true){
+
+        }else {
+            startActivity(new Intent(logIn.this,MainActivity.class));
+        }
+    }
+
+    private boolean authenticate(){
+        return userData.getUserLoggedIn();
+    }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.logOutBtn:
-                Intent loginIntent = new Intent(this, logIn.class);
+                userData.clearUserData();
+                userData.setUserLoggedIn(false);
+                Intent loginIntent = new Intent(logIn.this  , MainActivity.class);
                 startActivity(loginIntent);
                 break;
         }

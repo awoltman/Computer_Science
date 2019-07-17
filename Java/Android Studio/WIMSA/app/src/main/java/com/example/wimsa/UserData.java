@@ -12,10 +12,10 @@ public class UserData {
     }
     public void storedUserData(User user){
         SharedPreferences.Editor spEditor = userLocal.edit();
-        spEditor.putString("First Name", user.first_name);
-        spEditor.putString("Last Name", user.last_name);
-        spEditor.putString("Email", user.email);
-        spEditor.putString("Password", user.password);
+        spEditor.putString("firstname", user.first_name);
+        spEditor.putString("lastname", user.last_name);
+        spEditor.putString("email", user.email);
+        spEditor.putString("password", user.password);
         spEditor.commit();
 
     }
@@ -32,6 +32,15 @@ public class UserData {
         SharedPreferences.Editor spEditor = userLocal.edit();
         spEditor.putBoolean("LoggedIn",loggedIn);
         spEditor.commit();
+    }
+
+    public boolean getUserLoggedIn(){
+        if (userLocal.getBoolean("LoggedIn",false) == true){
+            return true;
+        }
+        else {
+            return false;
+        }
     }
 
     public void clearUserData(){
