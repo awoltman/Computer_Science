@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        emailET = (EditText) findViewById(R.id.emailEditText);
+        emailET = (EditText) findViewById(R.id.tagEditText);
         passwordET = (EditText) findViewById(R.id.passwordEditText);
         email = emailET.getText().toString();
         password = emailET.getText().toString();
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             break;
                     }
 
-                };
+                }
 
 
 

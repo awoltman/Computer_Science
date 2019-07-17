@@ -39,4 +39,16 @@ public class UserData {
         spEditor.clear();
         spEditor.commit();
     }
+    public String addNewMachine(IceMachine ice){
+        boolean tf = false;
+        IceMachine adding = ice;
+
+        if(tf == true){
+            return "Thanks for adding an Ice Machine";
+        }
+        else {
+            return  "Machine already exists";
+        }
+
+    }
 }

@@ -1,6 +1,5 @@
 package com.example.wimsa;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -14,9 +13,9 @@ public class newUser extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.newuser);
-        etFirst = (EditText) findViewById(R.id.fnEditText);
-        etLast = (EditText) findViewById(R.id.lnEditText);
-        etEmail = (EditText) findViewById(R.id.emailEditText);
+        etFirst = (EditText) findViewById(R.id.snEditText);
+        etLast = (EditText) findViewById(R.id.mnEditText);
+        etEmail = (EditText) findViewById(R.id.tagEditText);
         etPassword = (EditText) findViewById(R.id.passwordEditText);
         Button register = (Button) findViewById(R.id.regBtn);
         register.setOnClickListener(this);
