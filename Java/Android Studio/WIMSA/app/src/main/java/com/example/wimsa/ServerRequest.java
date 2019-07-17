@@ -12,7 +12,7 @@ import java.net.HttpURLConnection;
 public class ServerRequest {
     public static final int CONNECTION_TIMEOUT = 10000;
 
-    public  checkIfUser(String em, String pass){
+    public boolean checkIfUser(String em, String pass){
         final String email = em;
         final String password = pass;
 
@@ -21,7 +21,11 @@ public class ServerRequest {
 
     private class AsyncLogin extends AsyncTask<String,String,String>{
         HttpURLConnection conn;
-        URL url = null;
+
+        @Override
+        protected String doInBackground(String... strings) {
+            return null;
+        }
     }
 
 
