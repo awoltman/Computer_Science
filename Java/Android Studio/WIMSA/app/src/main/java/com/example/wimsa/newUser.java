@@ -1,5 +1,6 @@
 package com.example.wimsa;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -32,6 +33,10 @@ public class newUser extends AppCompatActivity implements View.OnClickListener {
                 String password = etPassword.getText().toString();
 
                 User registeredData = new User(first_n,last_n,email,password);
+                break;
+            case R.id.backBtn:
+                Intent forgotIntent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(forgotIntent);
                 break;
         }
 

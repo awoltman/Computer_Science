@@ -17,6 +17,8 @@ public class ServerRequest {
         final String password = pass;
 
         new AsyncLogin().execute(email,password);
+
+        return false;
     }
 
     private class AsyncLogin extends AsyncTask<String,String,String>{
