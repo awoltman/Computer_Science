@@ -21,6 +21,11 @@ public class ServerRequest {
 
     private class AsyncLogin extends AsyncTask<String,String,String>{
         HttpURLConnection conn;
+
+        @Override
+        protected String doInBackground(String... strings) {
+            return null;
+        }
     }
 
 
