@@ -5,7 +5,7 @@ import android.content.SharedPreferences;
 
 public class UserData {
     public static final String SP_NAME = "userDetails";
-    SharedPreferences userLocal;
+    private SharedPreferences userLocal;
 
     public UserData(Context context){
         userLocal = context.getSharedPreferences(SP_NAME,0);

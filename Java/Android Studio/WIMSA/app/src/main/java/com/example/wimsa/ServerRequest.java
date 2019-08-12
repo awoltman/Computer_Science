@@ -1,32 +1,30 @@
 package com.example.wimsa;
 
-import android.app.ProgressDialog;
-import android.content.ContentValues;
-import android.content.Context;
 import android.os.AsyncTask;
-import org.apache.http.params.HttpConnectionParams;
-import org.apache.http.params.HttpParams;
 
-import java.net.HttpURLConnection;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.URI;
+import java.net.URL;
+
 
 public class ServerRequest {
-    public static final int CONNECTION_TIMEOUT = 10000;
 
-    public boolean checkIfUser(String em, String pass){
-        final String email = em;
-        final String password = pass;
+    String loginEmail,loginPassword;
+    boolean inOut = false;
 
-        new AsyncLogin().execute(email,password);
+    public boolean ServerRequest(String email, String password){
+        this.loginEmail = email;
+        this.loginPassword = password;
+
+        new
+
+    }
+    protected void onPreExecute(){
+
     }
 
     private class AsyncLogin extends AsyncTask<String,String,String>{
-        HttpURLConnection conn;
 
-        @Override
-        protected String doInBackground(String... strings) {
-            return null;
-        }
     }
-
-
 }
