@@ -51,6 +51,10 @@ public class newUser extends AppCompatActivity implements View.OnClickListener {
                     startActivity(loginSuc);
                 }
                 break;
+            case R.id.backBtn:
+                Intent forgotIntent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(forgotIntent);
+                break;
         }
 
     }

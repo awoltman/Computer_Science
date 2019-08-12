@@ -17,7 +17,10 @@ public class ServerRequest {
         this.loginEmail = email;
         this.loginPassword = password;
 
-        new
+        new AsyncLogin().execute(email,password);
+
+        return false;
+    }
 
     }
     protected void onPreExecute(){
